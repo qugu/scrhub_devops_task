@@ -4,6 +4,7 @@ The proxy server forwards any url_path's or headers passed to it to the httpbin 
 
 To do:
 * No concurrency, single process, single thread. We can only handle a single request at once.
+* No error handling.
 * No limits implemented because of above. I could use `aiohttp` or a rate limiting package via a decorator, though.
 * The output 'wfile' does not conform to HTTP 1.1 standard and thus impossible to open in a browser window (cURL only).
 
