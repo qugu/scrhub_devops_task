@@ -7,6 +7,12 @@ To do:
 * No limits implemented because of above. I could use `aiohttp` or a rate limiting package via a decorator, though.
 * The output 'wfile' does not conform to HTTP 1.1 standard and thus impossible to open in a browser window (cURL only).
 
+## Running the server
+```
+docker build -it webby:latest .
+docker run -it -p 8080:8080 webby:latest
+```
+
 ## Example usage
 ```
 ~/git/p/scrhub_devops_task$ curl -H 'Super: Header' 127.0.0.1:8080/headers
